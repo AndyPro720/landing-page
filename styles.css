@@ -1,0 +1,20 @@
+* {
+    /* display: flex; */
+    margin: 0.1px;
+    background-color: #1f2937;
+}
+
+.header {
+    display: flex;
+    margin: 5px;
+    color: #f9faf8;
+    font-size: 36px;
+    font-weight: 900;
+    justify-content: space-around;
+}
+
+img {
+    height: 70px;
+    width: auto;
+    border-radius: 50%;
+}
