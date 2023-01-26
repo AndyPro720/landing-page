@@ -1,20 +1,78 @@
-* {
-    /* display: flex; */
-    margin: 0.1px;
-    background-color: #1f2937;
-}
+body { min-height: 100vh; margin: 0.3px;}
 
+.white-text, a {
+    color:#f9faf8;
+    margin: 0px;
+}
 .header {
+    background-color: #1f2937;
     display: flex;
-    margin: 5px;
-    color: #f9faf8;
     font-size: 36px;
     font-weight: 900;
     justify-content: space-around;
+    align-items: center;
 }
 
-img {
+.header img {
     height: 70px;
     width: auto;
     border-radius: 50%;
+    padding: 10px;
+}
+
+.intro {
+    background: linear-gradient(-45deg, #ff00ff, #ff3322, #3322ee);
+    background-size: 300% 300%;
+    animation: bg 5s ease infinite alternate;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6px;
+}
+
+.sign-up {
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 18px;
+    font-size: 20px;
+}
+
+.intro h2 {
+    font-size: 52px;
+}
+
+.intro img {
+    width: 400px;
+    height: auto;
+    border: 6px groove rgb(23, 191, 104);
+}
+button {
+    transition-duration: 0.4s;
+    height: 40px;
+    width: 80px;
+    border: 3px solid green;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(32, 157, 32);
+}
+
+button:hover {
+    background-color: rgb(3, 73, 3);
+    color: white;
+}
+
+@keyframes bg  {
+    50% {
+        background-position: left;
+    }
+        
+    100% {
+        background-position: right;
+    }
+        
 }
