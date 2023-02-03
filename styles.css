@@ -1,10 +1,10 @@
-body { min-height: 100vh; margin: 0.3px;}
+body { min-height: 100vh; margin: 0.3px; scroll-behavior: smooth;}
 
 .white-text, a {
     color:#f9faf8;
     margin: 0px;
 }
-.header {
+.header, .footer {
     background-color: #1f2937;
     display: flex;
     font-size: 36px;
@@ -226,4 +226,30 @@ p a:hover {
 
 .random:hover:after {
   transform: translateY(5px);
+}
+
+.sign-up-area {
+  display: flex;
+  min-width: 100%;
+  padding: 20px;
+  justify-content: space-evenly;
+}
+.sign-box {
+  display: flex;
+  flex-direction: column;
+  width: 220mm;
+  height: auto;
+  background-color: #1158b1;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+.footer {
+  height: 10mm;
+  min-width: 100%;
+  font-size: 15px;
+  color: white;
+  font-weight: 300;
 }
